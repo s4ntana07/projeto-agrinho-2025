@@ -23,28 +23,37 @@
     <!-- Header pequeno, aparece quando checkbox está marcado -->
     <header id="header-pequeno">
         <div class="header-content">
-            <span class="header-title">
-                <span class="header-emoji">🌾</span>
-                <span class="header-text">Agrinho 2025</span>
-            </span>
-            <div class="accessibility-controls">
-                <!-- Toggle de tema -->
-                <div class="theme-controls"> 
-                    <input type="checkbox" id="theme-toggle" hidden aria-label="Alternar entre tema claro e escuro" />
-                    <label for="theme-toggle" class="theme-toggle" title="Alternar tema">
-                        <span class="theme-icon-dark">🌙</span>
-                        <span class="theme-icon-light">☀️</span>
-                    </label>
+            <span>🌾 Agrinho 2025</span>
+            
+            <!-- Hamburger Menu -->
+            <input type="checkbox" id="menu-toggle" hidden aria-label="Abrir menu de navegação" />
+            <label for="menu-toggle" class="hamburger-btn" aria-label="Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </label>
+            
+            <!-- Menu Mobile -->
+            <nav class="mobile-menu">
+                <div class="accessibility-controls">
+                    <!-- Toggle de tema -->
+                    <div class="theme-controls"> 
+                        <input type="checkbox" id="theme-toggle" hidden aria-label="Alternar entre tema claro e escuro" />
+                        <label for="theme-toggle" class="theme-toggle" title="Alternar tema">
+                            <span class="theme-icon-dark">🌙</span>
+                            <span class="theme-icon-light">☀️</span>
+                        </label>
+                    </div>
+                    <!-- Controle de fonte -->
+                    <div class="font-controls">
+                        <input type="checkbox" id="font-size-toggle" hidden aria-label="Alternar tamanho da fonte" />
+                        <label for="font-size-toggle" class="font-size-btn" title="Aumentar/Diminuir fonte">
+                            <span class="font-icon">Aa</span>
+                        </label>
+                    </div>
                 </div>
-                <!-- Controle de fonte -->
-                <div class="font-controls">
-                    <input type="checkbox" id="font-size-toggle" hidden aria-label="Alternar tamanho da fonte" />
-                    <label for="font-size-toggle" class="font-size-btn" title="Aumentar/Diminuir fonte">
-                        <span class="font-icon">Aa</span>
-                    </label>
-                </div>
-            </div>
-            <label for="toggle" class="btn-voltar">Voltar</label>
+                <label for="toggle" class="btn-voltar">Voltar</label>
+            </nav>
         </div>
     </header>
 
