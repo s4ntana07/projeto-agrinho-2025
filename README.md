@@ -69,8 +69,8 @@ Todo o conteúdo textual e visual é autoral, criado por Felipe Santana especial
 
 ## 🔗 Links
 
-- [Site do Projeto](https://seu-link-aqui.com)
-- [Repositório no GitHub](https://github.com/seu-usuario/seu-repo)
+- [Site do Projeto]( https://s4ntana07.github.io/projeto-agrinho-2025/)
+- [Repositório no GitHub](https://github.com/s4ntana07/projeto-agrinho-2025)
 
 ---
 
