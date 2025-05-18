@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>🌾 Projeto Agrinho 2025</title>
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Projeto Agrinho 2025 - Festejando a conexão campo e cidade: inovação, cultura e sustentabilidade." />
+    <meta name="theme-color" content="#0f2027" />
+</head>
+
+<body>
+
+    <!-- Checkbox escondido para controlar a troca -->
+    <input type="checkbox" id="toggle" hidden
+        aria-label="Alternar visualização entre tela inicial e conteúdo principal" />
+
+    <!-- Label para o checkbox, atua como botão Explorar -->
+    <label for="toggle" id="btn-explorar" class="btn-primaria">Explorar</label>
+
+    <!-- Header pequeno, aparece quando checkbox está marcado -->
+    <header id="header-pequeno">
+        <div class="header-content">
+            <span class="header-title">
+                <span class="header-emoji">🌾</span>
+                <span class="header-text">Agrinho 2025</span>
+            </span>
+            <div class="accessibility-controls">
+                <!-- Toggle de tema -->
+                <div class="theme-controls"> 
+                    <input type="checkbox" id="theme-toggle" hidden aria-label="Alternar entre tema claro e escuro" />
+                    <label for="theme-toggle" class="theme-toggle" title="Alternar tema">
+                        <span class="theme-icon-dark">🌙</span>
+                        <span class="theme-icon-light">☀️</span>
+                    </label>
+                </div>
+                <!-- Controle de fonte -->
+                <div class="font-controls">
+                    <input type="checkbox" id="font-size-toggle" hidden aria-label="Alternar tamanho da fonte" />
+                    <label for="font-size-toggle" class="font-size-btn" title="Aumentar/Diminuir fonte">
+                        <span class="font-icon">Aa</span>
+                    </label>
+                </div>
+            </div>
+            <label for="toggle" class="btn-voltar">Voltar</label>
+        </div>
+    </header>
+
+    <!-- Tela inicial (hero grande) -->
+    <div id="hero" class="hero">
+        <div class="hero-content">
+            <h1 id="titulo-hero">🌾Agrinho 2025</h1>
+            <p><strong>Festejando a conexão campo e cidade: inovação, cultura e sustentabilidade.</strong></p>
+        </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <main id="main-content">
+
+        <section id="sobre" class="bloco glass">
+            <h2>✨ Sobre o Projeto</h2>
+            <p>
+                O Projeto Agrinho 2025 celebra a parceria entre o campo e a cidade, promovendo práticas sustentáveis,
+                inovação tecnológica e cultura popular.
+                Aqui, agricultores, educadores, artistas e jovens se unem para construir um futuro onde tradição e
+                modernidade caminham juntas.
+            </p>
+            <p>
+                De feiras agroecológicas a oficinas de reciclagem urbana, o Agrinho é um movimento vivo que transforma
+                realidades e inspira novas gerações.
+            </p>
+            <p>
+                Com foco em educação ambiental, fortalecimento da agricultura familiar e uso consciente da tecnologia,
+                o Agrinho 2025 é um convite para repensarmos o futuro do nosso planeta — com os pés na terra e os olhos no amanhã.
+            </p>
+        </section>
+
+        <section class="bloco glass">
+            <h2>📈 Resultados Esperados</h2>
+            <ul>
+                <li>🌿 Redução de 20% no uso de embalagens plásticas em feiras locais.</li>
+                <li>👩‍🏫 Formação de 300 educadores em práticas de sustentabilidade.</li>
+                <li>🚀 Criação de um aplicativo para conectar produtores e consumidores locais.</li>
+                <li>🏫 Implantação de hortas escolares em mais de 50 instituições públicas.</li>
+            </ul>
+        </section>
+    
+        <!-- Seção nova -->
+        <section class="bloco glass">
+            <h2>🧑‍🤝‍🧑 Parcerias</h2>
+            <p>
+                O Agrinho 2025 conta com o apoio de universidades, cooperativas agrícolas, ONGs ambientais e artistas locais.
+                Juntos, transformamos ideias em ação e fortalecemos o vínculo entre conhecimento acadêmico, cultura popular e práticas comunitárias.
+            </p>
+            <p>
+                Algumas parcerias em destaque:
+            </p>
+            <ul>
+                <li>👨‍🎓 Universidade Estadual - Núcleo de Extensão Rural</li>
+                <li>🌱 Cooperativa Verde Vida</li>
+                <li>🎭 Coletivo de Cultura Caipira e Urbana</li>
+                <li>📻 Rádio Comunitária Raízes do Campo</li>
+            </ul>
+        </section>
+        
+        <section class="bloco glass">
+            <h2>🌱 Como participar?</h2>
+            <p>
+                Quer fazer parte dessa transformação? Seja um voluntário, parceiro ou apenas venha visitar e aprender
+                conosco.
+                Estamos abertos a ideias que valorizem a conexão entre o rural e o urbano, unindo saberes e fortalecendo
+                comunidades.
+            </p>
+            <p>
+                Entre em contato e saiba como colaborar com o Agrinho 2025!
+            </p>
+        </section>
+
+        <section class="cards-container">
+            <div class="card glass" tabindex="0" role="article" aria-labelledby="feira-title">
+                <h3 id="feira-title">🌻 Feira Agroecológica Itinerante</h3>
+                <p>
+                    Todo mês, produtores locais levam alimentos frescos direto do campo para as praças da cidade — sem
+                    intermediários, sem agrotóxicos.
+                    Um encontro que valoriza o trabalho rural e conecta consumidores conscientes.
+                </p>
+            </div>
+            <div class="card glass" tabindex="0" role="article" aria-labelledby="oficinas-title">
+                <h3 id="oficinas-title">🎨 Oficinas Culturais</h3>
+                <p>
+                    Arte que nasce da terra: rodas de viola caipira, pintura com pigmentos naturais e contação de
+                    histórias que resgatam a identidade rural com um toque urbano.
+                </p>
+            </div>
+            <div class="card glass" tabindex="0" role="article" aria-labelledby="inovacao-title">
+                <h3 id="inovacao-title">💡 Inovação Sustentável</h3>
+                <p>
+                    Aplicação de tecnologias como sensores para monitoramento do solo e sistemas de irrigação
+                    inteligentes, promovendo eficiência e preservação dos recursos naturais.
+                </p>
+            </div>
+            <div class="card glass" tabindex="0" role="article" aria-labelledby="impacto-title">
+                <h3 id="impacto-title">📊 Impacto Social</h3>
+                <p>
+                    Mais de 500 famílias beneficiadas em 2024, com geração de renda e acesso a educação ambiental em
+                    comunidades rurais e urbanas.
+                </p>
+            </div>
+        </section>
+
+        <section class="bloco glass">
+            <h2>🌍 Curiosidades da Conexão Campo e Cidade</h2>
+            <ul>
+                <li>🚜 Mais de 70% dos alimentos consumidos nas cidades vêm da agricultura familiar.</li>
+                <li>🏙️ Sabia que muitas cidades estão criando hortas urbanas nos telhados e praças?</li>
+                <li>🌾 A troca de sementes entre produtores rurais mantém viva a biodiversidade local.</li>
+                <li>🤝 Feiras de produtores reduzem em até 40% o desperdício de alimentos comparado ao varejo tradicional.</li>
+                <li>📱 Aplicativos de compra direta do campo para a cidade cresceram 300% nos últimos 5 anos.</li>
+            </ul>
+        </section>
+
+
+        <section class="bloco glass">
+            <h2>📬 Contato</h2>
+            <form method="post" action="#" aria-label="Formulário de contato">
+                <div class="form-group">
+                    <label for="nome" class="form-label">Seu nome:</label>
+                    <input 
+                        type="text" 
+                        id="nome" 
+                        name="nome" 
+                        required 
+                        aria-required="true"
+                        aria-describedby="nome-desc" />
+                    <span id="nome-desc" class="visually-hidden">Digite seu nome completo</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem" class="form-label">Sua mensagem:</label>
+                    <textarea 
+                        id="mensagem" 
+                        name="mensagem" 
+                        rows="5" 
+                        required 
+                        aria-required="true"
+                        aria-describedby="mensagem-desc"></textarea>
+                    <span id="mensagem-desc" class="visually-hidden">Digite sua mensagem para a equipe Agrinho</span>
+                </div>
+
+                <button type="submit" class="btn-primaria">
+                    <span class="btn-text">Enviar mensagem</span>
+                </button>
+            </form>
+        </section>
+
+        <footer>
+            <p>Desenvolvido por <a href="#" class="footer-link">Felipe Santana</a> — Agrinho 2025</p>
+        </footer>
+    </main>
+
+</body>
+
+</html>
