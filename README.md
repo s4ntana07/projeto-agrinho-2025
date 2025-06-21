@@ -64,8 +64,8 @@ Imagens autorais tiradas por mim com um Galaxy A15, ilustrando a conexão entre 
 
 <div align="center">
 
-<img src="assets/imagens/WhatsApp Image 2025-06-21 at 13.16.57.jpeg" alt="Imagem representando o campo" width="250"/>
-<img src="assets/imagens/WhatsApp Image 2025-06-21 at 13.37.10.jpeg" alt="Imagem representando a cidade" width="250"/>
+  <img src="assets/imagens/WhatsApp Image 2025-06-21 at 13.16.57.jpeg" alt="Imagem representando o campo" width="250" height="250"/>
+  <img src="assets/imagens/WhatsApp Image 2025-06-21 at 13.37.10.jpeg" alt="Imagem representando a cidade" width="250" height="250"/>
 
 </div>
 
