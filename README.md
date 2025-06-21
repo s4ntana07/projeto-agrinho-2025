@@ -58,6 +58,21 @@ O site se adapta perfeitamente a diferentes tamanhos de tela:
 4. Use o botão "Aa" para aumentar/diminuir o tamanho da fonte
 5. Navegue pelo conteúdo usando mouse ou teclado
 
+## 📸 Representações Visuais
+
+Imagens autorais tiradas por mim com um Galaxy A15, ilustrando a conexão entre campo e cidade:
+
+<div align="center">
+
+<img src="assets/imagens/WhatsApp Image 2025-06-21 at 13.16.57.jpeg" alt="Imagem representando o campo" width="250"/>
+<img src="assets/imagens/WhatsApp Image 2025-06-21 at 13.37.10.jpeg" alt="Imagem representando a cidade" width="250"/>
+
+</div>
+
+**Legenda:**  
+🌾 O Campo: onde tudo começa  
+🏙️ A Cidade: onde o saber se transforma  
+
 ## 📝 Autoria
 
 Todo o conteúdo textual e visual é autoral, criado por Felipe Santana especialmente para o Projeto Agrinho 2025.

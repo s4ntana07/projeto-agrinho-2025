@@ -1324,3 +1324,112 @@ body:has(#theme-toggle-mobile:checked) .progress-bar {
 :root[data-theme="light"] .curiosidade-item:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
+
+.divisor-fotos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2.5rem;
+    margin: 3rem 0 2rem 0;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.foto-polaroid {
+    background: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    padding: 1rem 1rem 0.7rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 260px;
+    margin-bottom: 0.5rem;
+    position: relative;
+    transition: transform 0.18s, background 0.3s;
+}
+.foto-polaroid:hover {
+    transform: scale(1.04) rotate(-2deg);
+}
+.foto-polaroid img {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+.legenda {
+    margin-top: 0.7em;
+    font-size: 1.05rem;
+    color: var(--texto);
+    font-weight: 500;
+    text-align: center;
+    background: #fff9;
+    border-radius: 8px;
+    padding: 0.3em 0.7em;
+    transition: color 0.3s, background 0.3s;
+}
+.creditos-foto-central {
+    width: 50%;
+    text-align: center;
+    margin-top: 1.2em;
+    color: var(--texto);
+    font-size: 0.98rem;
+    font-style: italic;
+    background: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    padding: 0.3em 1em;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+    transition: color 0.3s, background 0.3s;
+}
+
+body:has(#theme-toggle:checked) .legenda,
+body:has(#theme-toggle-mobile:checked) .legenda {
+    color: #222;
+    background: #fff9;
+}
+body:not(:has(#theme-toggle:checked)):not(:has(#theme-toggle-mobile:checked)) .legenda {
+    color: var(--texto);
+    background: var(--card-bg);
+}
+body:has(#theme-toggle:checked) .creditos-foto-central,
+body:has(#theme-toggle-mobile:checked) .creditos-foto-central {
+    color: #333;
+    background: rgba(255,255,255,0.7);
+}
+body:not(:has(#theme-toggle:checked)):not(:has(#theme-toggle-mobile:checked)) .creditos-foto-central {
+    color: var(--texto);
+    background: var(--card-bg);
+}
+
+body:not(:has(#theme-toggle:checked)):not(:has(#theme-toggle-mobile:checked)) .foto-polaroid {
+    background: var(--card-bg);
+}
+body:has(#theme-toggle:checked) .foto-polaroid,
+body:has(#theme-toggle-mobile:checked) .foto-polaroid {
+    background: #fff;
+}
+
+@media (max-width: 900px) {
+    .foto-polaroid img {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      aspect-ratio: 22/15;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .foto-polaroid img {
+      max-width: 98vw;
+      aspect-ratio: 22/15;
+      height: auto;
+    }
+
+    .creditos-foto-central {
+        width: 70%;
+    }
+  }
