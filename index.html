@@ -12,279 +12,277 @@
 </head>
 
 <body>
+    <!-- Checkboxes de controle de estado -->
+    <input type="checkbox" id="toggle" hidden aria-label="Alternar visualização entre tela inicial e conteúdo principal" />
+    <input type="checkbox" id="theme-toggle" hidden aria-label="Alternar entre tema claro e escuro" />
+    <input type="checkbox" id="font-size-toggle" hidden aria-label="Alternar tamanho da fonte" />
 
-    <!-- Checkbox escondido para controlar a troca -->
-    <input type="checkbox" id="toggle" hidden
-        aria-label="Alternar visualização entre tela inicial e conteúdo principal" />
+    <!-- Container da página para aplicar estilos -->
+    <div class="page-container">
+        <!-- Label para o checkbox, atua como botão Explorar -->
+        <label for="toggle" id="btn-explorar" class="btn-primaria">Explorar</label>
 
-    <!-- Label para o checkbox, atua como botão Explorar -->
-    <label for="toggle" id="btn-explorar" class="btn-primaria">Explorar</label>
-
-    <!-- Header pequeno, aparece quando checkbox está marcado -->
-    <header id="header-pequeno">
-        <div class="header-content">
-            <div class="header-title">
-                <span class="header-emoji">🌾</span>
-                <span class="header-text">Agrinho 2025</span>
-            </div>
-            
-            <!-- Menu Desktop -->
-            <nav class="nav-desktop">
-                <a href="#sobre" class="nav-link">Sobre</a>
-                <a href="#resultados" class="nav-link">Resultados</a>
-                <a href="#parcerias" class="nav-link">Parcerias</a>
-                <a href="#participar" class="nav-link">Participar</a>
-                <a href="#contato" class="nav-link">Contato</a>
-                
-                <!-- Controles de Acessibilidade Desktop -->
-                <div class="accessibility-controls-desktop">
-                    <!-- Toggle de tema -->
-                    <div class="theme-controls"> 
-                        <input type="checkbox" id="theme-toggle" hidden aria-label="Alternar entre tema claro e escuro" />
-                        <label for="theme-toggle" class="theme-toggle" title="Alternar tema">
-                            <span class="theme-icon-dark">🌙</span>
-                            <span class="theme-icon-light">☀️</span>
-                        </label>
-                    </div>
-                    <!-- Controle de fonte -->
-                    <div class="font-controls">
-                        <input type="checkbox" id="font-size-toggle" hidden aria-label="Alternar tamanho da fonte" />
-                        <label for="font-size-toggle" class="font-size-btn" title="Aumentar/Diminuir fonte">
-                            <span class="font-icon">Aa</span>
-                        </label>
-                    </div>
+        <!-- Header pequeno, aparece quando checkbox está marcado -->
+        <header id="header-pequeno">
+            <div class="header-content">
+                <div class="header-title">
+                    <span class="header-emoji">🌾</span>
+                    <span class="header-text">Agrinho 2025</span>
                 </div>
-                <label for="toggle" class="btn-voltar">Voltar</label>
-            </nav>
-
-            <!-- Hamburger Menu -->
-            <input type="checkbox" id="menu-toggle" hidden aria-label="Abrir menu de navegação" />
-            <label for="menu-toggle" class="hamburger-btn" aria-label="Menu">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </label>
-            
-            <!-- Menu Mobile -->
-            <nav class="mobile-menu">
-                <!-- Links de Navegação -->
-                <div class="mobile-nav">
+                
+                <!-- Menu Desktop -->
+                <nav class="nav-desktop">
                     <a href="#sobre" class="nav-link">Sobre</a>
                     <a href="#resultados" class="nav-link">Resultados</a>
                     <a href="#parcerias" class="nav-link">Parcerias</a>
                     <a href="#participar" class="nav-link">Participar</a>
                     <a href="#contato" class="nav-link">Contato</a>
-                </div>
+                    
+                    <!-- Controles de Acessibilidade Desktop -->
+                    <div class="accessibility-controls-desktop">
+                        <!-- Toggle de tema -->
+                        <div class="theme-controls"> 
+                            <label for="theme-toggle" class="theme-toggle" title="Alternar tema">
+                                <span class="theme-icon-dark">🌙</span>
+                                <span class="theme-icon-light">☀️</span>
+                            </label>
+                        </div>
+                        <!-- Controle de fonte -->
+                        <div class="font-controls">
+                            <label for="font-size-toggle" class="font-size-btn" title="Aumentar/Diminuir fonte">
+                                <span class="font-icon">Aa</span>
+                            </label>
+                        </div>
+                    </div>
+                    <label for="toggle" class="btn-voltar">Voltar</label>
+                </nav>
 
-                <!-- Controles de Acessibilidade Mobile -->
-                <div class="accessibility-controls">
-                    <!-- Toggle de tema -->
-                    <div class="theme-controls"> 
-                        <input type="checkbox" id="theme-toggle-mobile" hidden aria-label="Alternar entre tema claro e escuro" />
-                        <label for="theme-toggle-mobile" class="theme-toggle" title="Alternar tema">
-                            <span class="theme-icon-dark">🌙</span>
-                            <span class="theme-icon-light">☀️</span>
-                        </label>
+                <!-- Hamburger Menu -->
+                <input type="checkbox" id="menu-toggle" hidden aria-label="Abrir menu de navegação" />
+                <label for="menu-toggle" class="hamburger-btn" aria-label="Menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </label>
+                
+                <!-- Menu Mobile -->
+                <nav class="mobile-menu">
+                    <!-- Links de Navegação -->
+                    <div class="mobile-nav">
+                        <a href="#sobre" class="nav-link">Sobre</a>
+                        <a href="#resultados" class="nav-link">Resultados</a>
+                        <a href="#parcerias" class="nav-link">Parcerias</a>
+                        <a href="#participar" class="nav-link">Participar</a>
+                        <a href="#contato" class="nav-link">Contato</a>
                     </div>
-                    <!-- Controle de fonte -->
-                    <div class="font-controls">
-                        <input type="checkbox" id="font-size-toggle-mobile" hidden aria-label="Alternar tamanho da fonte" />
-                        <label for="font-size-toggle-mobile" class="font-size-btn" title="Aumentar/Diminuir fonte">
-                            <span class="font-icon">Aa</span>
-                        </label>
+
+                    <!-- Controles de Acessibilidade Mobile -->
+                    <div class="accessibility-controls">
+                        <!-- Toggle de tema -->
+                        <div class="theme-controls"> 
+                            <label for="theme-toggle" class="theme-toggle" title="Alternar tema">
+                                <span class="theme-icon-dark">🌙</span>
+                                <span class="theme-icon-light">☀️</span>
+                            </label>
+                        </div>
+                        <!-- Controle de fonte -->
+                        <div class="font-controls">
+                            <label for="font-size-toggle" class="font-size-btn" title="Aumentar/Diminuir fonte">
+                                <span class="font-icon">Aa</span>
+                            </label>
+                        </div>
                     </div>
-                </div>
-                <label for="toggle" class="btn-voltar">Voltar</label>
-            </nav>
+                    <label for="toggle" class="btn-voltar">Voltar</label>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Tela inicial (hero grande) -->
+        <div id="hero" class="hero">
+            <div class="hero-content">
+                <h1 id="titulo-hero">🌾Agrinho 2025</h1>
+                <p><strong>Festejando a conexão campo e cidade: inovação, cultura e sustentabilidade.</strong></p>
+            </div>
         </div>
-    </header>
 
-    <!-- Tela inicial (hero grande) -->
-    <div id="hero" class="hero">
-        <div class="hero-content">
-            <h1 id="titulo-hero">🌾Agrinho 2025</h1>
-            <p><strong>Festejando a conexão campo e cidade: inovação, cultura e sustentabilidade.</strong></p>
-        </div>
-    </div>
+        <!-- Conteúdo principal -->
+        <main id="main-content">
 
-    <!-- Conteúdo principal -->
-    <main id="main-content">
-
-        <section id="sobre" class="bloco glass">
-            <h2>✨ Sobre o Projeto</h2>
-            <p>
-                O Agrinho 2025 celebra a união entre campo e cidade por meio de inovação tecnológica,
-                cultura popular e práticas sustentáveis. Inspirado em projetos como o HUB Internacional para o
-                Desenvolvimento Sustentável, integramos laboratórios vivos ao ar livre — hortas,
-                espaços de aprendizado e tecnologia aplicada à agricultura urbana.
-            </p>
-            <p>
-                Temos feiras, oficinas, sistemas inteligentes de irrigação, sensores de solo, tudo para estimular um uso
-                eficiente dos recursos naturais e aproximar as pessoas da origem dos alimentos.
-            </p>
-            <p>
-                Queremos promover o diálogo entre saberes tradicionais do campo e as expressões culturais urbanas,
-                fortalecendo vínculos e construindo soluções colaborativas para um futuro regenerativo.
-            </p>        
-            <p>
-                Inspirados por exemplos reais como as feiras agroecológicas de Santos e Fortaleza, buscamos aproximar quem planta de
-                quem consome, fortalecendo circuitos curtos de comercialização. Também nos espelhamos em soluções aplicadas em cidades
-                como Curitiba e Goiânia, onde hortas públicas, jardins de chuva e tecnologias verdes já são realidade urbana.
-            </p>
-            <p>
-                O projeto integra ações educativas, sociais e ambientais com base em iniciativas reconhecidas, como o Prêmio Planeta Campo,
-                que destaca produtores inovadores, e eventos como o Festival Cidade do Futuro, que aproximam saberes rurais da
-                inovação tecnológica urbana.
-            </p>
-
-            <div class="divisor-fotos">
-                <div class="foto-polaroid">
-                    <img src="assets/imagens/WhatsApp Image 2025-06-21 at 13.16.57.jpeg" alt="Imagem representando o campo">
-                    <span class="legenda">🌾 O Campo: onde tudo começa</span>
-                </div>
-                <div class="foto-polaroid">
-                    <img src="assets/imagens/WhatsApp Image 2025-06-21 at 13.37.10.jpeg" alt="Imagem representando a cidade">
-                    <span class="legenda">🏙️ A Cidade: onde o saber se transforma</span>
-                </div>
-                <div class="creditos-foto-central">
-                    Fotos autorais tiradas por mim no celular galaxy a15
-                </div>
-            </div>
-        </section>
-    
-        <section id="resultados" class="bloco glass">
-            <h2>📈 Resultados Esperados</h2>
-            <div class="progress-container">
-                <div class="progress-item">
-                    <div class="progress-label">
-                        <span>🌿 Redução de embalagens plásticas</span>
-                        <span>20%</span>
-                    </div>
-                    <div class="progress-bar"></div>
-                </div>
-                <div class="progress-item">
-                    <div class="progress-label">
-                        <span>👩‍🏫 Educadores capacitados</span>
-                        <span>300</span>
-                    </div>
-                    <div class="progress-bar"></div>
-                </div>
-                <div class="progress-item">
-                    <div class="progress-label">
-                        <span>🚀 App de conexão campo-cidade</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="progress-bar"></div>
-                </div>
-                <div class="progress-item">
-                    <div class="progress-label">
-                        <span>🏫 Hortas comunitárias</span>
-                        <span>50+</span>
-                    </div>
-                    <div class="progress-bar"></div>
-                </div>
-            </div>
-        </section>
-    
-        <section id="parcerias" class="bloco glass">
-            <h2>🧑‍🤝‍🧑 Parcerias Estratégicas</h2>
-            <p>
-                Em colaboração com universidades, cooperativas, governos e coletivos culturais, nosso projeto cria uma rede
-                agrícola, tecnológica e artística. Como o Parque Tecnológico de Ribeirão Preto, unimos P&D,
-                inovação e sustentabilidade.
-            </p>
-            <div class="partnership-cards">
-                <div class="partnership-card">
-                    <div class="partnership-icon">👨‍🎓</div>
-                    <h3>Universidade Estadual</h3>
-                    <p>Núcleo de Extensão Rural e Inovação Social, desenvolvendo pesquisas e soluções sustentáveis.</p>
-                </div>
-                <div class="partnership-card">
-                    <div class="partnership-icon">🌱</div>
-                    <h3>Cooperativa Verde Vida</h3>
-                    <p>Agricultura familiar e agroecologia, promovendo práticas sustentáveis e comércio justo.</p>
-                </div>
-                <div class="partnership-card">
-                    <div class="partnership-icon">🎭</div>
-                    <h3>Coletivo Raiz & Cipó</h3>
-                    <p>Gastronomia sustentável, permacultura e cultura do Cerrado, unindo tradição e inovação.</p>
-                </div>
-                <div class="partnership-card">
-                    <div class="partnership-icon">📻</div>
-                    <h3>Rádio Comunitária</h3>
-                    <p>Raízes do Campo - Mobilização e comunicação local, fortalecendo a voz da comunidade.</p>
-                </div>
-            </div>
-        </section>
-    
-        <section id="participar" class="bloco glass">
-            <h2>🌱 Como participar?</h2>
-            <p>
-                Seja voluntário em hortas comunitárias, participe de oficinas de tecnologia verde, apoie encontros
-                culturais ou ajude a divulgar o aplicativo. Sua ação fortalece a conexão rural-urbana e espalha
-                inovação sustentável.
-            </p>
-            <p>Contate nossa equipe e vamos construir juntos uma rede de transformação social e ambiental!</p>
-        </section>
-    
-        <section class="cards-container">
-            <div class="card glass" tabindex="0" role="article" aria-labelledby="feira-title">
-                <h3 id="feira-title">🌻 Feira Agroecológica Itinerante</h3>
+            <section id="sobre" class="bloco glass">
+                <h2>✨ Sobre o Projeto</h2>
                 <p>
-                    Feiras mensais com produtos frescos diretamente do campo, práticas agroecológicas, troca de sementes
-                    crioulas e diálogo entre produtores e consumidores.
+                    O Agrinho 2025 celebra a união entre campo e cidade por meio de inovação tecnológica,
+                    cultura popular e práticas sustentáveis. Inspirado em projetos como o HUB Internacional para o
+                    Desenvolvimento Sustentável, integramos laboratórios vivos ao ar livre — hortas,
+                    espaços de aprendizado e tecnologia aplicada à agricultura urbana.
                 </p>
-            </div>
-            <div class="card glass" tabindex="0" role="article" aria-labelledby="oficinas-title">
-                <h3 id="oficinas-title">🎨 Oficinas Culturais</h3>
                 <p>
-                    Rodas de viola, pintura com pigmentos naturais, biojoias, festas do cerrado, contação de histórias:
-                    resgatamos o rural em ambiente urbano, inspirados por coletivos culturais locais.
+                    Temos feiras, oficinas, sistemas inteligentes de irrigação, sensores de solo, tudo para estimular um uso
+                    eficiente dos recursos naturais e aproximar as pessoas da origem dos alimentos.
                 </p>
-            </div>
-            <div class="card glass" tabindex="0" role="article" aria-labelledby="inovacao-title">
-                <h3 id="inovacao-title">💡 Inovação Sustentável</h3>
                 <p>
-                    Sensores de solo, irrigação automatizada, hortas verticais e sistemas hidropônicos,
-                    reduzindo desperdício e aumentando eficiência hídrica e produtiva.
-                </p>
-            </div>
-            <div class="card glass" tabindex="0" role="article" aria-labelledby="impacto-title">
-                <h3 id="impacto-title">📊 Impacto Social</h3>
+                    Queremos promover o diálogo entre saberes tradicionais do campo e as expressões culturais urbanas,
+                    fortalecendo vínculos e construindo soluções colaborativas para um futuro regenerativo.
+                </p>        
                 <p>
-                    Em 2024, alcançamos 500 famílias com geração de renda em hortas comunitárias, melhoria da
-                    qualidade de vida e conscientização ambiental.
+                    Inspirados por exemplos reais como as feiras agroecológicas de Santos e Fortaleza, buscamos aproximar quem planta de
+                    quem consome, fortalecendo circuitos curtos de comercialização. Também nos espelhamos em soluções aplicadas em cidades
+                    como Curitiba e Goiânia, onde hortas públicas, jardins de chuva e tecnologias verdes já são realidade urbana.
                 </p>
-            </div>
-        </section>
-    
-        <section class="bloco glass">
-            <h2>🌍 Curiosidades sobre Campo e Cidade</h2>
-            <div class="curiosidades-list">
-                <div class="curiosidade-item">
-                    <div class="curiosidade-icon">🚜</div>
-                    <p>A agricultura urbana produz entre 15–20% dos alimentos consumidos globalmente.</p>
-                </div>
-                <div class="curiosidade-item">
-                    <div class="curiosidade-icon">🏙️</div>
-                    <p>Hortas comunitárias melhoram o microclima local, reduzem ilhas de calor, filtram ar e águas de chuva.</p>
-                </div>
-                <div class="curiosidade-item">
-                    <div class="curiosidade-icon">🌾</div>
-                    <p>A troca de sementes crioulas entre produtores fortalece biodiversidade local e identidade cultural.</p>
-                </div>
-                <div class="curiosidade-item">
-                    <div class="curiosidade-icon">🤝</div>
-                    <p>A economia solidária urbana reduz o desperdício em até 40% e cria renda para comunidades.</p>
-                </div>
-                <div class="curiosidade-item">
-                    <div class="curiosidade-icon">📱</div>
-                    <p>Apps de hortas urbanas e compra direta cresceram 300% nos últimos 5 anos, conectando pessoas e territórios.</p>
-                </div>
-            </div>
-        </section>
+                <p>
+                    O projeto integra ações educativas, sociais e ambientais com base em iniciativas reconhecidas, como o Prêmio Planeta Campo,
+                    que destaca produtores inovadores, e eventos como o Festival Cidade do Futuro, que aproximam saberes rurais da
+                    inovação tecnológica urbana.
+                </p>
 
-        <section class="bloco glass" id="contato">
+                <div class="divisor-fotos">
+                    <div class="foto-polaroid">
+                        <img src="assets/imagens/WhatsApp Image 2025-06-21 at 13.16.57.jpeg" alt="Imagem representando o campo">
+                        <span class="legenda">🌾 O Campo: onde tudo começa</span>
+                    </div>
+                    <div class="foto-polaroid">
+                        <img src="assets/imagens/WhatsApp Image 2025-06-21 at 13.37.10.jpeg" alt="Imagem representando a cidade">
+                        <span class="legenda">🏙️ A Cidade: onde o saber se transforma</span>
+                    </div>
+                    <div class="creditos-foto-central">
+                        Fotos autorais tiradas por mim no celular galaxy a15
+                    </div>
+                </div>
+            </section>
+        
+            <section id="resultados" class="bloco glass">
+                <h2>📈 Resultados Esperados</h2>
+                <div class="progress-container">
+                    <div class="progress-item">
+                        <div class="progress-label">
+                            <span>🌿 Redução de embalagens plásticas</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="progress-bar"></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-label">
+                            <span>👩‍🏫 Educadores capacitados</span>
+                            <span>300</span>
+                        </div>
+                        <div class="progress-bar"></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-label">
+                            <span>🚀 App de conexão campo-cidade</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar"></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-label">
+                            <span>🏫 Hortas comunitárias</span>
+                            <span>50+</span>
+                        </div>
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+            </section>
+        
+            <section id="parcerias" class="bloco glass">
+                <h2>🧑‍🤝‍🧑 Parcerias Estratégicas</h2>
+                <p>
+                    Em colaboração com universidades, cooperativas, governos e coletivos culturais, nosso projeto cria uma rede
+                    agrícola, tecnológica e artística. Como o Parque Tecnológico de Ribeirão Preto, unimos P&D,
+                    inovação e sustentabilidade.
+                </p>
+                <div class="partnership-cards">
+                    <div class="partnership-card">
+                        <div class="partnership-icon">👨‍🎓</div>
+                        <h3>Universidade Estadual</h3>
+                        <p>Núcleo de Extensão Rural e Inovação Social, desenvolvendo pesquisas e soluções sustentáveis.</p>
+                    </div>
+                    <div class="partnership-card">
+                        <div class="partnership-icon">🌱</div>
+                        <h3>Cooperativa Verde Vida</h3>
+                        <p>Agricultura familiar e agroecologia, promovendo práticas sustentáveis e comércio justo.</p>
+                    </div>
+                    <div class="partnership-card">
+                        <div class="partnership-icon">🎭</div>
+                        <h3>Coletivo Raiz & Cipó</h3>
+                        <p>Gastronomia sustentável, permacultura e cultura do Cerrado, unindo tradição e inovação.</p>
+                    </div>
+                    <div class="partnership-card">
+                        <div class="partnership-icon">📻</div>
+                        <h3>Rádio Comunitária</h3>
+                        <p>Raízes do Campo - Mobilização e comunicação local, fortalecendo a voz da comunidade.</p>
+                    </div>
+                </div>
+            </section>
+        
+            <section id="participar" class="bloco glass">
+                <h2>🌱 Como participar?</h2>
+                <p>
+                    Seja voluntário em hortas comunitárias, participe de oficinas de tecnologia verde, apoie encontros
+                    culturais ou ajude a divulgar o aplicativo. Sua ação fortalece a conexão rural-urbana e espalha
+                    inovação sustentável.
+                </p>
+                <p>Contate nossa equipe e vamos construir juntos uma rede de transformação social e ambiental!</p>
+            </section>
+        
+            <section class="cards-container">
+                <div class="card glass" tabindex="0" role="article" aria-labelledby="feira-title">
+                    <h3 id="feira-title">🌻 Feira Agroecológica Itinerante</h3>
+                    <p>
+                        Feiras mensais com produtos frescos diretamente do campo, práticas agroecológicas, troca de sementes
+                        crioulas e diálogo entre produtores e consumidores.
+                    </p>
+                </div>
+                <div class="card glass" tabindex="0" role="article" aria-labelledby="oficinas-title">
+                    <h3 id="oficinas-title">🎨 Oficinas Culturais</h3>
+                    <p>
+                        Rodas de viola, pintura com pigmentos naturais, biojoias, festas do cerrado, contação de histórias:
+                        resgatamos o rural em ambiente urbano, inspirados por coletivos culturais locais.
+                    </p>
+                </div>
+                <div class="card glass" tabindex="0" role="article" aria-labelledby="inovacao-title">
+                    <h3 id="inovacao-title">💡 Inovação Sustentável</h3>
+                    <p>
+                        Sensores de solo, irrigação automatizada, hortas verticais e sistemas hidropônicos,
+                        reduzindo desperdício e aumentando eficiência hídrica e produtiva.
+                    </p>
+                </div>
+                <div class="card glass" tabindex="0" role="article" aria-labelledby="impacto-title">
+                    <h3 id="impacto-title">📊 Impacto Social</h3>
+                    <p>
+                        Em 2024, alcançamos 500 famílias com geração de renda em hortas comunitárias, melhoria da
+                        qualidade de vida e conscientização ambiental.
+                    </p>
+                </div>
+            </section>
+        
+            <section class="bloco glass">
+                <h2>🌍 Curiosidades sobre Campo e Cidade</h2>
+                <div class="curiosidades-list">
+                    <div class="curiosidade-item">
+                        <div class="curiosidade-icon">🚜</div>
+                        <p>A agricultura urbana produz entre 15–20% dos alimentos consumidos globalmente.</p>
+                    </div>
+                    <div class="curiosidade-item">
+                        <div class="curiosidade-icon">🏙️</div>
+                        <p>Hortas comunitárias melhoram o microclima local, reduzem ilhas de calor, filtram ar e águas de chuva.</p>
+                    </div>
+                    <div class="curiosidade-item">
+                        <div class="curiosidade-icon">🌾</div>
+                        <p>A troca de sementes crioulas entre produtores fortalece biodiversidade local e identidade cultural.</p>
+                    </div>
+                    <div class="curiosidade-item">
+                        <div class="curiosidade-icon">🤝</div>
+                        <p>A economia solidária urbana reduz o desperdício em até 40% e cria renda para comunidades.</p>
+                    </div>
+                    <div class="curiosidade-item">
+                        <div class="curiosidade-icon">📱</div>
+                        <p>Apps de hortas urbanas e compra direta cresceram 300% nos últimos 5 anos, conectando pessoas e territórios.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bloco glass" id="contato">
             <h2>📬 Entre em Contato</h2>
             <div class="contato-content">
                 <p>Quer conversar com a gente? Clique no botão abaixo:</p>
@@ -292,17 +290,23 @@
                     <a href="mailto:felipegsantana08@gmail.com?subject=Contato%20Projeto%20Agrinho%202025&body=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20Projeto%20Agrinho%202025." 
                     class="btn-primaria">✉️ Enviar por Cliente de E-mail</a>
 
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=felipegsantana08@gmail.com&su=Contato%20Projeto%20Agrinho%202025&body=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20Projeto%20Agrinho%202025." 
-                    target="_blank" class="btn-primaria">📧 Abrir no Gmail</a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=felipegsantana08@gmail.com&su=Contato%20Projeto%20Agrinho%202025&body=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20Projeto%20Agrinho%202025." 
+                        target="_blank" class="btn-primaria">📧 Abrir no Gmail</a>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <footer>
-            <p>Desenvolvido por <a href="https://github.com/s4ntana07" class="footer-link">Felipe Santana</a> — Agrinho 2025</p>
-        </footer>
-    </main>
-
+            <footer>
+                <p>
+                  Desenvolvido por 
+                  <a href="https://github.com/s4ntana07" class="footer-link" target="_blank" rel="noopener noreferrer">
+                    Felipe Santana
+                  </a> — Agrinho 2025
+                </p>
+              </footer>
+              
+        </main>
+    </div>
 </body>
 
 </html>
